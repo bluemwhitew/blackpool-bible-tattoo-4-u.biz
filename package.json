@@ -1,0 +1,31 @@
+{
+    "name": "blackpool-bible-tattoo-4-u.biz",
+    "description": "The Best Vegan Tattoo Artists in Blackpool",
+    "version": "1.0.0",
+    "author": "Matt Walters <bluemwhitew@hotmail.co.uk>",
+    "bugs": {
+        "url": "https://www.github.com/bluemwhitew/blackpool-bible-tattoo-4-u.biz/issues"
+    },
+    "dependencies": {
+        "@11ty/eleventy": "^0.12.1",
+        "clean-css": "^5.1.2"
+    },
+    "engines": {
+        "node": ">=10.14",
+        "npm": ">=6.14"
+    },
+    "keywords": [
+        "blackpool",
+        "tattoo",
+        "vegan"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:bluemwhitew/blackpool-bible-tattoo-4-u.biz.git"
+    },
+    "scripts": {
+        "build": "eleventy",
+        "start": "eleventy --port=2106 --serve"
+    }
+}

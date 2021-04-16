@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en-gb">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="ie=edge" http-equiv="x-ua-compatible"/>
+        <meta content="width=device-width, minimal-ui, minimum-scale=1, initial-scale=1" name="viewport"/>
+        {% set css %}
+            {% include "css/modern-normalize.css" %}
+            {% include "css/style.css" %}
+        {% endset %}
+        <style type="text/css">
+            {{ css | cssmin | safe }}
+        </style>
+        <title>{{ renderData.title }}</title>
+    </head>
+    <body>
+        <main>
+            {{ content | safe }}
+        </main>
+    </body>
+</html>
