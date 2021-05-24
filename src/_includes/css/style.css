@@ -94,6 +94,8 @@ img {
 
 .gallery-content__reel-item__content p:last-child {
     color: #6b7280;
+    font-size: 1rem;
+    line-height: 1.5rem;
     margin-top: 0.75rem;
 }
 
