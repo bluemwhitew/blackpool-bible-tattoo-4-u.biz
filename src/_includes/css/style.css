@@ -1,8 +1,100 @@
+:root {
+    --color-primary: #059669;
+}
+
 h1 {
-    background-color: rgb(5, 150, 105);
+    background-color: var(--color-primary);
     display: block;
     height: 24rem;
+}
+
+a {
+    color: var(--color-primary);
+}
+
+h1,
+h2,
+h3,
+p {
     margin: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.gallery-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+    padding: 3rem 1rem;
+    position: relative;
+}
+
+.gallery-content__title {
+    text-align: center;
+}
+
+.gallery-content__title h2 {
+    font-size: 1.875rem;
+    font-weight: 800;
+    line-height: 2.25rem;
+}
+
+.gallery-content__title p {
+    color: #6b7280;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin: 0.75rem auto 0;
+    max-width: 42rem;
+}
+
+.gallery-content__reel {
+    display: grid;
+    gap: 1.25rem;
+    margin: 2rem auto 0;
+    max-width: 32rem;
+}
+
+.gallery-content__reel-item {
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.gallery-content__reel-item__image {
+    flex-shrink: 0;
+}
+
+.gallery-content__reel-item__image img {
+    height: 12rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+.gallery-content__reel-item__content {
+    padding: 1.5rem;
+}
+
+.gallery-content__reel-item__content p:first-child {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.gallery-content__reel-item__content h3 {
+    color: #111827;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    margin-top: 0.5rem;
+}
+
+.gallery-content__reel-item__content p:last-child {
+    color: #6b7280;
+    margin-top: 0.75rem;
 }
 
 .footer-content {
@@ -33,6 +125,15 @@ h1 {
 
 /* Tablet */
 @media (min-width: 640px) {
+    .gallery-content__title h2 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    .gallery-content__title p {
+        margin-top: 1rem;
+    }
+
     .footer-content {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
@@ -41,6 +142,11 @@ h1 {
 
 /* Desktop */
 @media (min-width: 1024px) {
+    .gallery-content__reel {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        max-width: none;
+    }
+
     .footer-content {
         padding-left: 2rem;
         padding-right: 2rem;
