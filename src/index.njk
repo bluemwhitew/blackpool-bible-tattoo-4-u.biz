@@ -2,7 +2,34 @@
 layout: layout.njk
 permalink: "/"
 renderData:
-    title: "Welcome to Red Tilly Tattoo"
+    title: "Coming Soon &diamondsuit; Red Tilly Tattoo"
 ---
 
-<h1>Welcome to Red Tilly Tattoo</h1>
+<section id="coming-soon">
+    <h1>Coming Soon</h1>
+</section>
+
+{% if content.gallery %}
+    <section id="gallery">
+        <div class="gallery-content">
+            <div class="gallery-content__title">
+                <h2>Latest Work</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.</p>
+            </div>
+            <div class="gallery-content__reel">
+                {% for item in content.gallery %}
+                    <div class="gallery-content__reel-item">
+                        <div class="gallery-content__reel-item__image">
+                            <img alt="{{ item.title }}" decoding="async" loading="lazy" src="{{ item.img }}"/>
+                        </div>
+                        <div class="gallery-content__reel-item__content">
+                            <p>{{ item.type }}</p>
+                            <h3>{{ item.title }}</h3>
+                            <p>{{ item.description }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endif %}
