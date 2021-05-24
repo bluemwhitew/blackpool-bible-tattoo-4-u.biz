@@ -2,12 +2,6 @@
     --color-primary: #059669;
 }
 
-h1 {
-    background-color: var(--color-primary);
-    display: block;
-    height: 24rem;
-}
-
 a {
     color: var(--color-primary);
 }
@@ -22,6 +16,15 @@ p {
 img {
     height: auto;
     max-width: 100%;
+}
+
+#coming-soon {
+    align-items: center;
+    background-color: var(--color-primary);
+    font-size: 3rem;
+    display: flex;
+    height: 75vh;
+    justify-content: center;
 }
 
 .gallery-content {
