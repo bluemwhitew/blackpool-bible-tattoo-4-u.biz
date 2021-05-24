@@ -1,0 +1,28 @@
+{
+  "gallery": [
+    {
+      "description": "Pellentesque laoreet a mi id vestibulum. Curabitur tincidunt nisl lobortis sem ullamcorper iaculis. Nam neque eros, egestas in ex vitae, eleifend eleifend mi.",
+      "img": "https://images.unsplash.com/photo-1525240265165-574d447c1264?auto=format&fit=crop&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=800",
+      "title": "Postage Stamp for Reginald",
+      "type": "New School"
+    },
+    {
+      "description": "Morbi vel purus ut purus auctor tristique eu ac nibh. Aliquam vitae justo sed odio finibus tempor. Vestibulum ex tellus, ullamcorper sit amet magna eu, pellentesque auctor enim.",
+      "img": "https://images.unsplash.com/photo-1570106786245-ce68ce6503f8?auto=format&fit=crop&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=800",
+      "title": "Dream Catcher for Consuela",
+      "type": "Anishinabe"
+    },
+    {
+      "description": "Nullam vulputate tellus purus, facilisis laoreet lorem varius ac. Phasellus rhoncus diam rhoncus dolor finibus porta. Maecenas condimentum ipsum id blandit rhoncus.",
+      "img": "https://images.unsplash.com/photo-1588417490413-57973b627712?auto=format&fit=crop&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=800",
+      "title": "Striking Arrow for Jeremy",
+      "type": "Geometric"
+    },
+    {
+      "description": "Etiam interdum, massa vehicula tristique finibus, neque purus auctor nibh, vel aliquet quam lorem sodales lorem. Praesent accumsan, neque eget pretium interdum, quam sem fringilla justo, nec vulputate nisi arcu sed turpis.",
+      "img": "https://images.unsplash.com/photo-1615143501637-9f856fb14492?auto=format&fit=crop&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=800",
+      "title": "Rose for Rose",
+      "type": "Minimalist"
+    }
+  ]
+}

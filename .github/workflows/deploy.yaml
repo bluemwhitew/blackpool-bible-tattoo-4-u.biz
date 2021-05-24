@@ -1,0 +1,45 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - develop
+      - master
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    if: github.repository == 'bluemwhitew/blackpool-bible-tattoo-4-u.biz'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.14.x'
+
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          path: ~/.npm
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - run: |
+          echo "<!-- $GITHUB_RUN_ID deploying $GITHUB_REF to ${{ secrets.URL }} -->" > src/_includes/github.njk
+      - run: npm ci
+      - run: npm run build --if-present
+
+      - name: Deploy
+        uses: appleboy/scp-action@v0.1.1
+        with:
+          host: ${{ secrets.HOST }}
+          key: ${{ secrets.KEY }}
+          overwrite: true
+          port: ${{ secrets.PORT }}
+          source: "dist/*"
+          strip_components: 1
+          target: ${{ secrets.TARGET }}
+          username: ${{ secrets.USERNAME }}
