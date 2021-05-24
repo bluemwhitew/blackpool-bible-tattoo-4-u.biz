@@ -40,6 +40,5 @@ jobs:
           overwrite: true
           port: ${{ secrets.PORT }}
           source: "dist/*"
-          strip_components: 1
           target: ${{ secrets.TARGET }}
           username: ${{ secrets.USERNAME }}
