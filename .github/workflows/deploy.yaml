@@ -35,10 +35,11 @@ jobs:
       - name: Deploy
         uses: appleboy/scp-action@v0.1.1
         with:
+          debug: true
           host: ${{ secrets.HOST }}
           key: ${{ secrets.KEY }}
-          overwrite: true
           port: ${{ secrets.PORT }}
+          rm: true
           source: "dist/*"
           strip_components: 1
           target: ${{ secrets.TARGET }}
