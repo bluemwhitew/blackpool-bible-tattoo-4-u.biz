@@ -81,7 +81,51 @@ renderData:
             </div>
         </div>
         <div class="contact-content__booking">
-            <!-- @todo: Book Online -->
+            <h3>Book Online</h3>
+            <form action="#">
+                <div class="field">
+                    <label for="first_name">First Name</label>
+                    <div class="field__input">
+                        <input autocomplete="given-name" id="first_name" name="first_name" type="text"/>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="last_name">Last Name</label>
+                    <div class="field__input">
+                        <input autocomplete="family-name" id="last_name" name="last_name" type="text"/>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="email">E-Mail</label>
+                    <div class="field__input">
+                        <input autocomplete="email" id="email" name="email" type="text"/>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="flex justify-between">
+                        <label for="phone">Phone</label>
+                        <span class="field__hint" id="phone-hint">Optional</span>
+                    </div>
+                    <div class="field__input">
+                        <input aria-describedby="phone-hint" autocomplete="phone" id="phone" name="phone" type="text"/>
+                    </div>
+                </div>
+                <div class="field field--span">
+                    <label for="subject">Subject</label>
+                    <div class="field__input">
+                        <input id="subject" name="subject" type="text"/>
+                    </div>
+                </div>
+                <div class="field field--span">
+                    <div class="flex justify-between">
+                        <label for="message">Message</label>
+                        <span class="field__hint" id="message-hint">Max. 500 characters</span>
+                    </div>
+                    <div class="field__input">
+                        <textarea aria-describedby="message-hint" id="message" name="message" rows="5"></textarea>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </section>
