@@ -6,6 +6,26 @@ a {
     color: var(--color-primary);
 }
 
+button,
+input,
+textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 0.375rem;
+    border: 1px solid #d1d5db;
+    color: #111827;
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    width: 100%;
+}
+
+dd,
+dl,
 h1,
 h2,
 h3,
@@ -18,20 +38,33 @@ img {
     max-width: 100%;
 }
 
+textarea {
+    min-height: 4rem;
+    resize: vertical;
+}
+
+
+
 #coming-soon {
     align-items: center;
-    background-color: var(--color-primary);
+    background: var(--color-primary) url('https://images.unsplash.com/photo-1604695840046-fe1fb42422ac?auto=format&fit=crop&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1280') no-repeat center center;
+    background-size: cover;
     font-size: 3rem;
     display: flex;
     height: 75vh;
     justify-content: center;
 }
 
+#coming-soon h1 {
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+}
+
 .gallery-content {
     margin-left: auto;
     margin-right: auto;
     max-width: 80rem;
-    padding: 3rem 1rem;
+    padding: 3rem 2rem;
     position: relative;
 }
 
@@ -102,6 +135,115 @@ img {
     margin-top: 0.75rem;
 }
 
+#contact {
+    background-color: #efefef;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+    padding: 3rem 1rem;
+}
+
+.contact-content__information {
+    background-color: var(--color-primary);
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    color: #eef2ff;
+    padding: 2.5rem 1.5rem;
+}
+
+.contact-content__information h2 {
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+}
+
+.contact-content__information p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    max-width: 48rem;
+}
+
+.contact-content__information dl {
+    margin-top: 2rem;
+}
+
+.contact-content__information dt,
+.contact-content__information dd {
+    margin: 1.5rem 0;
+}
+
+.contact-content__information dd {
+    display: flex;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.contact-content__information dd span {
+    margin-left: 0.75rem;
+}
+
+.contact-content__information svg {
+    flex-shrink: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.contact-content__information__social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.contact-content__information__social a {
+    color: #eef2ff;
+}
+
+.contact-content__booking {
+    background-color: #fff;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding: 2.5rem 1.5rem;
+}
+
+.contact-content__booking h3 {
+    color: #111827;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+}
+
+.contact-content__booking form {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    margin-top: 1.5rem;
+    row-gap: 1.5rem;
+}
+
+.contact-content__booking form label {
+    color: #111827;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.contact-content__booking form .field__input {
+    margin-top: 0.25rem;
+}
+
+.contact-content__booking form .field__hint {
+    color: #9Ca3af;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
 .footer-content {
     margin-left: auto;
     margin-right: auto;
@@ -139,6 +281,22 @@ img {
         margin-top: 1rem;
     }
 
+    .contact-content__information,
+    .contact-content__booking {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .contact-content__booking form {
+        column-gap: 2rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-content__booking form .field--span {
+        grid-column: span 2;
+    }
+
+    .contact-content,
     .footer-content {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
@@ -152,15 +310,35 @@ img {
         max-width: none;
     }
 
+    .contact-content {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-content,
     .footer-content {
         padding-left: 2rem;
         padding-right: 2rem;
     }
 }
 
+/* Desktop XL */
+@media (min-width: 1280px) {
+    .contact-content__information,
+    .contact-content__booking {
+        padding: 3rem;
+    }
+}
 
 
 /* Utilities */
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
 .sr-only {
     border-width: 0;
     clip: rect(0, 0, 0, 0);
