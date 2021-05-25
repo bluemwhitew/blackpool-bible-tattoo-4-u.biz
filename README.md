@@ -1,4 +1,8 @@
 # blackpool-bible-tattoo-4-u.biz
+[![Actions](https://img.shields.io/github/workflow/status/bluemwhitew/blackpool-bible-tattoo-4-u.biz/Deploy?style=for-the-badge)](https://www.github.com/bluemwhitew/blackpool-bible-tattoo-4-u.biz/actions)
+[![Issues](https://img.shields.io/github/issues/bluemwhitew/blackpool-bible-tattoo-4-u.biz?style=for-the-badge)](https://www.github.com/bluemwhitew/blackpool-bible-tattoo-4-u.biz/issues)
+[![License](https://img.shields.io/github/license/bluemwhitew/blackpool-bible-tattoo-4-u.biz?style=for-the-badge)](https://www.github.com/bluemwhitew/blackpool-bible-tattoo-4-u.biz/blob/master/LICENSE.txt)
+
 Coming Soon
 
 ## Prerequisites
@@ -7,6 +11,14 @@ Coming Soon
   - [Visual Studio Code](https://code.visualstudio.com)
 - [Git](https://www.git-scm.com)
 - [Node](https://www.nodejs.org) `>=10.14`
+
+## Getting Started
+- Clone the repository
+  - `git clone https://www.github.com/bluemwhitew/blackpool-bible-tattoo-4-u.biz.git`
+- Install dependencies and start the Eleventy service
+  - `npm install`
+  - `npm start`
+- Browse to: http://localhost:2106
 
 ## File Structure
 ```
