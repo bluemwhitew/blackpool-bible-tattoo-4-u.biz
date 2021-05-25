@@ -20,18 +20,24 @@ img {
 
 #coming-soon {
     align-items: center;
-    background-color: var(--color-primary);
+    background: var(--color-primary) url('https://images.unsplash.com/photo-1604695840046-fe1fb42422ac?auto=format&fit=crop&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1280') no-repeat center center;
+    background-size: cover;
     font-size: 3rem;
     display: flex;
     height: 75vh;
     justify-content: center;
 }
 
+#coming-soon h1 {
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+}
+
 .gallery-content {
     margin-left: auto;
     margin-right: auto;
     max-width: 80rem;
-    padding: 3rem 1rem;
+    padding: 3rem 2rem;
     position: relative;
 }
 
