@@ -24,6 +24,12 @@ textarea {
     width: 100%;
 }
 
+button {
+    background-color: var(--color-primary);
+    border-color: transparent;
+    color: #fff;
+}
+
 dd,
 dl,
 h1,
@@ -149,7 +155,9 @@ textarea {
 }
 
 .contact-content__information {
-    background-color: var(--color-primary);
+    background: var(--color-primary) url('https://images.unsplash.com/photo-1597852075234-fd721ac361d3?auto=format&fit=crop&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1280') no-repeat center center;
+    background-blend-mode: soft-light;
+    background-size: cover;
     border-bottom-left-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
     color: #eef2ff;
@@ -290,6 +298,12 @@ textarea {
     .contact-content__booking form {
         column-gap: 2rem;
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-content__booking form button {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        width: auto;
     }
 
     .contact-content__booking form .field--span {
